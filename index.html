@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jeenal Malviya</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience" onclick="ToggleMenu()">Experience</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jeenal Malviya</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="ToggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>            
+            <div class="menu-links">
+                <li><a href="#about" onclick="ToggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="ToggleMenu()">Experience</a></li>
+                <li><a href="#contacts" onclick="ToggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/masthai.png" alt="Jeenal Malviya profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1>Jeenal Malviya</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Jeenal Malviya - Resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <p align="left"> <a href="https://www.linkedin.com/in/jeenal-malviya-25927728a/" target="blank"> <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" /> </a> &nbsp;&nbsp; <a href="https://github.com/Jeenalmalviya" target="blank"> <img src="./assets/github.png" alt="My Github profile" class="icon" /> </a> </p>
+            </div>
+        </div>
+    </section>    
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/IMG_1242.JPG" alt="Profile picture" class="IMG_1242">
+            </div>
+            <div class="about-details-containers">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years<br/>Software Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.tech in Computer Science (Cyber Security)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+Hello! I'm Jeenal Malviya, a dedicated software developer passionate about using technology to solve real-world problems. Python is my primary language, and I love its versatility—whether it's web development, automation, or diving into data science and machine learning.
+<br>
+Key Points:<br>
+- Python Enthusiast: I specialize in Python for its clean syntax and adaptability.<br>
+- Problem Solver: I enjoy tackling challenges and learning from every experience.<br>
+- Team Player: Collaborative and communicative, I thrive in diverse teams.<br>
+- Beyond Code: Balancing tech with a love for books, the outdoors, and creativity.<br>
+
+I'm excited about the possibilities in tech and ready to contribute to impactful solutions.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow image" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-detail-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt = "Experience" class="icon">
+                            <div>
+                                <h3>REACT.JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt = "Experience" class="icon">
+                            <div>
+                                <h3>NODE.JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt = "Experience" class="icon">
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt = "Experience" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt = "Experience icon" class="icon">
+                            <div>
+                                <h3>FLUTTER</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                        </article>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow image" class="icon arrow"
+    onclick="location.href='./#contacts'">
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contatc-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon ">
+                <p><a href="mailto:jeenalmalviya2@gmail.com">jeenalmalviya2@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience" onclick="ToggleMenu()">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Jeenal Malviya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
